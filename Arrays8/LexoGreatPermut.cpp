@@ -7,6 +7,9 @@ Time Complexity: O(N!*N)
 Space Complexity: O(1)
 */ 
 
+
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -49,16 +52,17 @@ int main()
 		
     vector<int> arr;
     string input;
-    getline(cin, input);                  //getting the input in single line
-    istringstream is(input);              // traferring it to stream
+    getline(cin, input);                  											//getting the input in single line
+    istringstream is(input);              											// traferring it to stream
     int num;
-    while(is>>num) arr.push_back(num);	  //transferring it to array
+    while(is>>num) arr.push_back(num);	  											//transferring it to array
     
+    // next_permutation(arr.begin(),arr.end());  									//Using C++ inbuilt function
     nextGreaterPermut(arr);
     
-    copy(arr.begin(),arr.end(),ostream_iterator<int>(cout," "));	//printing vector in one line
+    copy(arr.begin(),arr.end(),ostream_iterator<int>(cout," "));					//printing vector in one line
      
-	/* for(int i:arr){
+	/* for(int i:arr){																//printing using iterator
     	cout<<i<< " ";
 	}  */
 		
