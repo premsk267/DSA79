@@ -3,6 +3,9 @@
 
 
 /*Brute force
+1.Generate all permutations O(n!)
+2.search for the number     O(n)
+3.print the next one
 Time Complexity: O(N!*N)
 Space Complexity: O(1)
 */ 
